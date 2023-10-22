@@ -127,12 +127,12 @@ if (userValue === cpuValue) {
       setTimeout(() => {
         resetGame();
         gameContainer.classList.remove("start");
-      }, 2000);
+      }, 1000);
     } else {
       result.textContent = `${outComeValue} Won!!`;
     }
   }
-    }, 2500);
+    }, 1000);
   });
 });
 
