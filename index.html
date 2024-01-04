@@ -1,54 +1,43 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - codingnepalweb.com -->
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>Link's Adventure</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>   
-    <section class="container">
-        <p>Princess zelda has been kidnapped by a scary monster. In order to save princess zelda
-            you need to beat the monster in a game of rock paper scissor. Go save princess zelda !!!
-        </p>
-        <a href="score.html" class="button">Go to Score</a>
-      <div class="result_field">
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-header bg-warning text-white"><strong>Formulir Pendaftaran Siswa</strong></div>
+			<div class="card-body bg-primary text-white">
+		<form method="post" action="https://script.google.com/macros/s/AKfycbzujDtQLQf8Sp_-TUpriLDNhU-HgyJzxHz9YXovlrP4wiDc5DgyRgzkOBSQpuYC4sh6/exec" name="contact-form">
+			<div class="form-group">
+				<label for="nama">Nama</label>
+				<input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Lengkap Anda">
+			</div>
+			<div class="form-group">
+				<label for="jenis-kelamin">Jenis Kelamin</label>
+				<input type="text"  class="form-control" name="jenis-kelamin" placeholder="Masukkan Jenis Kelamin Anda">
+			</div>
+			<div class="form-group">
+				<label for="tempat-lahir">Tempat lahir</label>
+				<input type="text"  class="form-control" name="tempat-lahir" placeholder="Masukkan Tempat lahir Anda">
+			</div>
+			<div class="form-group">
+				<label for="tanggal-lahir">Tanggal Lahir</label>
+				<input type="date" class="form-control" name="tanggal-lahir" placeholder="Masukkan Tanggal Lahir Anda">
+			</div>
+			<div class="form-group">
+				<label for="telp">Telepon</label>
+				<input type="text" class="form-control" name="telp" placeholder="Masukkan Nomor Telepon Anda">
+			</div>
+			<div class="form-group">
+				<label for="alamat">Alamat</label>
+				<textarea class="form-control" name="alamat" rows="2" placeholder="Masukkan Alamat Anda"></textarea>
+			</div>
+			<input class="btn btn-success" type="submit" value="Daftar" id="daftar">
+		</form>
+	</div>
 
-        <div class="score">
-            <p>Player HP: <span id="player-hp">3</span></p>
-            <p>Enemy HP: <span id="enemy-hp">3</span></p>
-            <p>Player Score: <span id="player-score">0</span></p>
-            <p>Enemy Score: <span id="enemy-score">0</span></p>
-        </div>  
-        <div class="result_images">
-          <span class="user_result">
-            <img src="images/rock.png" alt="" />
-          </span>
-          <span class="cpu_result">
-            <img src="images/rock.png" alt="" />
-          </span>
-        </div>
-        <div class="result">Let's Play!!</div>
-      </div>
-
-      <div class="option_images">
-        <span class="option_image">
-          <img src="images/rock.png" alt="" />
-          <p>Rock</p>
-        </span>
-        <span class="option_image">
-          <img src="images/paper.png" alt="" />
-          <p>Paper</p>
-        </span>
-        <span class="option_image">
-          <img src="images/scissors.png" alt="" />
-          <p>Scissors</p>
-        </span>
-      </div>
-    </section>
-
-   <script src="script.js" defer></script>
-  </body>
+	<script src="script.js"></script>
+</body>
 </html>
